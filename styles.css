@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+}
+
+#grade {
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px rgb(17, 17, 17);
+}
+
+#grade div {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: black;
+}
+
+.jogador {
+    background: url("jogador.png") no-repeat;
+    background-size: contain;
+}
+
+.invasor {
+    background: url("ovni.png") no-repeat;
+    background-size: contain;
+}
+
+.tiro::after {
+    content: "";
+    width: 4px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: red;
+    position: absolute;
+    right: 13px;
+}
+
+.KABUM {
+    background: url("KABUM.png") no-repeat;
+    background-size: contain;
+}
+
+#controles {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #444444fd;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+i{
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+button:active {
+    transform: scale(0.95);
+}
